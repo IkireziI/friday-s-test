@@ -1,9 +1,5 @@
-function countVowels(string){
-    var vowelMatch = string.Match (/[a,e,u,i,o]/);
-    return vowelMatch ? vowelMatch.length : 0 ;
-    
-
+function countVowels(str)
+{
+return str. replace(/[^aeiou]/g, ""). length;
 }
-const string= ("hello");
-const result= countVowels(string);
-console.log(result);
+console. log(countVowels("hello"));
